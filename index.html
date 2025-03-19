@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>eightharsh</title>
+
+  <!-- Google Analytics (Deferred) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-R01DEX379F"></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    document.addEventListener("DOMContentLoaded", () => {
+      gtag('js', new Date());
+      gtag('config', 'G-R01DEX379F');
+    });
+  </script>
+
+  <!-- Preconnect for Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Load Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Inline Critical CSS -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Inter', sans-serif; 
+      line-height: 1.5; 
+      background-color: #fff; 
+      color: #333; 
+      transition: background 0.3s ease, color 0.3s ease; 
+    }
+    .container { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
+  </style>
+
+  <!-- Load Non-Critical CSS -->
+  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 class="name">HARSH RAJ KUMAR</h1>
+      <p class="bio">
+        Hi, I'm HARSH—a computer engineering student driven by curiosity and a love for technology.
+        I'm on an exciting path of discovery, diving deep into coding, innovative language-building projects,
+        and various tech endeavors.
+      </p>
+    </header>
+
+    <section class="section social">
+      <h2>Connect with Me</h2>
+      <div class="social-links" aria-label="Social Media Links">
+        <a href="https://github.com/eightharsh" target="_blank" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/eightharsh" target="_blank" class="social-link">LinkedIn</a>
+        <a href="https://x.com/eightharsh" target="_blank" class="social-link">X</a>
+        <a href="mailto:interact.harsh@gmail.com" class="social-link">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- External JavaScript (Deferred) -->
+  <script src="script.js" defer></script>
+</body>
+</html>
