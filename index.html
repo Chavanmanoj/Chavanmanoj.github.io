@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>M chavan</title>
-
-
-  <!-- Preconnect for Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Load Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Inline Critical CSS -->
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { 
-      font-family: 'Inter', sans-serif; 
-      line-height: 1.5; 
-      background-color: #fff; 
-      color: #333; 
-      transition: background 0.3s ease, color 0.3s ease; 
-    }
-    .container { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
-  </style>
-
-  <!-- Load Non-Critical CSS -->
-  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="styles.css"></noscript>
-</head>
-<body>
-  <main class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--this is code for navbar section-->
     <header>
-      <h1 class="name">M Chavan</h1>
-      <p class="bio">
-        Hi, I'm Chavan—a computer engineering student driven by curiosity and a love for technology.
-        I'm on an exciting path of discovery, diving deep into coding, innovative language-building projects,
-        and various tech endeavors.
-      </p>
+      <nav>
+        <div class="navbar">
+          <ul class="left">
+            <li class="manojchavan"><a href="">Manoj Chavan</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <section class="section social">
-      <h2>Connect with Me</h2>
-      <div class="social-links" aria-label="Social Media Links">
-        <a href="https://github.com/eightharsh" target="_blank" class="social-link">GitHub</a>
-        <a href="https://www.linkedin.com/in/eightharsh" target="_blank" class="social-link">LinkedIn</a>
-        <a href="https://x.com/eightharsh" target="_blank" class="social-link">X</a>
-        <a href="mailto:interact.harsh@gmail.com" class="social-link">Email</a>
-      </div>
-    </section>
-  </main>
+    <!--main section -->
+    <main class="mainsection">
+      <img src="image.jpg" alt="m .Chavan">
 
-  <!-- External JavaScript (Deferred) -->
-  <script src="script.js" defer></script>
-</body>
+      <h1>Hello</h1>
+      <h2>A Bit About Me</h2>
+      <p>
+        Hi, I'm Manoj Chavan — a computer engineering student driven by curiosity and a love for technology.
+         I'm on an exciting path of discovery, diving deep into coding, innovative language-building projects, and various tech endeavors.
+      </p>
+    </main>
+
+    <!--this is coding for the bottom-->
+    <footer>
+      <div class="footercontent">
+        <div class="phone">
+          <h2>Phone</h2>
+          <p>9011132061</p>
+        </div>
+        <div class="email">
+          <h2>Email</h2>
+          <p>mchavan4666@gmail.com</p>
+        </div>
+        <div class="links">
+          <h2>Follow Me</h2>
+          <ul>
+            <li><a href="">Instagram</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/manoj-chavan-84a888315"
+                >LindedIn</a
+              >
+            </li>
+            <li><a href="">X</a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
