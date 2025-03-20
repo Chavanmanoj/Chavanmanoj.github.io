@@ -1,74 +1,125 @@
-/* Root Variables */
-:root {
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --background-light: #ffffff;
-  --link-hover: #666666;
+.navbar {
+    background-color: white; 
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
-/* Reset & Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  background-color: var(--background-light);
-  color: var(--text-primary);
-  transition: background 0.3s ease, color 0.3s ease;
+.navbar li {
+    margin: 0 10px;
 }
 
-/* Container */
-.container {
-  max-width: 42rem;
-  margin: 2rem auto;
-  padding: 0 clamp(1rem, 5vw, 2rem);
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px ; 
+    font-size: 20px;
 }
 
-/* Header Styles */
-header {
-  margin-bottom: 2rem;
+.navbar li a:hover {
+    color: blue;
 }
 
-.name {
-  font-size: clamp(1.25rem, 5vw, 1.5rem);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+
+.navbar .right li:not(:last-child)::after {
+    content: "|";
+    margin-left: 20px; 
+    color: black;
+}
+.navbar .right li{
+    margin: 0 20px;
 }
 
-.bio {
-  font-size: clamp(0.9rem, 3vw, 1rem);
-  color: var(--text-secondary);
+.left {
+    margin-left: 70px; 
+    text-shadow: 2px 2px 5px red;
+}
+body{
+    border-bottom: 1px solid #ddd;
+}
+/* Footer Styles */
+footer {
+    background-color: white; /* Match the navbar background color */
+    color: black; /* Match the navbar text color */
+    padding: 20px 0;
+    border-top: 1px solid #ddd; /* Add a border to separate footer from content */
 }
 
-/* Social Links */
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.social-link {
-  font-size: 1rem;
-  color: var(--text-primary);
-  text-decoration: underline;
-  transition: color 0.2s;
+.footercontent div {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
 }
 
-@media (hover: hover) {
-  .social-link:hover {
-    color: var(--link-hover);
-  }
+.footercontent h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px red; /* Match the text shadow from the navbar */
 }
 
-@media (min-width: 480px) {
-  .social-links {
-    flex-direction: row;
-    gap: 1.25rem;
-  }
+.footercontent p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footercontent ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footercontent ul li {
+    margin-bottom: 10px;
+}
+
+.footercontent ul li a {
+    text-decoration: none;
+    color: black; /* Match the navbar link color */
+    font-size: 1em;
+}
+
+.footercontent ul li a:hover {
+    color: blue; /* Match the navbar link hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footercontent {
+        flex-direction: column;
+    }
+
+    .footercontent div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.mainsection{
+    margin: 200px 200px 200px 200px;
+    border: 1px solid black;
+    padding:  25px 40px 50px 20px ;
+}
+
+.imagemanoj{
+    height: 20px;
+    width: 20px;
 }
