@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manoj's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="sastyle.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Manoj Chavan — Building the future, one line of code at a time.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#goals">Goals</a>
+    <a href="#personal">Personal</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <h2>This is Manoj Chavan</h2>
+    <img src="images.jpg" alt="My Photo" class="profile-pic">
+    <p style="text-align:center;">
+      I’m <strong>Manoj Chavan</strong>, passionate about solving real-world problems
+      through creative code and bold ideas.
+    </p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <ul>
+      <li><strong>Name:</strong> Manoj Chavan</li>
+      <li><strong>Location:</strong> Boisar, Palghar, Maharashtra, India</li>
+      <li><strong>Education:</strong> Pursuing Computer Engineering at St. John College of Engineering and Management</li>
+      <li><strong>Languages Known:</strong> C, SQL, Python, HTML, CSS, JavaScript, React</li>
+    </ul>
+  </section>
+
+  <!-- Video Section -->
+<section id="video">
+  <h2> Video</h2>
+  <div class="video-container">
+   
+     <iframe width="700" height="300" src="https://www.youtube.com/embed/UeC9-5o22aU" title="Mumbai 2022 - The Comercial &amp; Financial Capital of India" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     
+    
+  </div>
+  
+</section>
+
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Intern at Raw Engineering</li>
+      <li>Standard PPT Presentation (2nd Prize)</li>
+    </ul>
+  </section>
+
+  <!-- Future Goals -->
+  <section id="goals">
+    <h2>Future Goals</h2>
+    <p>I want to become a full stack developer.</p>
+    <p>My mission is to solve real-world problems using technology and inspire the next generation of developers.</p>
+  </section>
+
+  <!-- Personal Side -->
+  <section id="personal">
+    <h2>More About Me</h2>
+    <ul>
+      <li><strong>Hobbies:</strong> Reading, Coding, Cricket</li>
+      <li><strong>Role Models:</strong> Myself – I am self-motivated</li>
+      <li><strong>Books:</strong> "Atomic Habits"</li>
+      <li><strong>Websites:</strong> Wix Studio</li>
+      <li><strong>Startups I admire:</strong> CRED — innovative design and user-centric experience</li>
+      <li><strong>Volunteering Experience:</strong> Not yet</li>
+    </ul>
+  </section>
+
+  
+
+  <!-- Location Section -->
+<section id="location">
+  <h2>My Location</h2>
+  <p>Currently located in Boisar, Palghar, Maharashtra, India.</p>
+  <div class="map-container">
+    <!-- Embed Google Maps iframe for location -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1433.5027713459683!2d72.7559433520754!3d19.79706230606787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbldg%20no%209%20ameya%20park%20boisar%20!5e0!3m2!1sen!2sin!4v1747731593348!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Form Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  
+  <!-- Contact Form -->
+  <form action="submit_form.php" method="POST" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</section>
+
+
+<!-- Contact Form -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="button-group">
+    <a href="mailto:123manoj2129@sjcem.edu.in">📧 Email Me</a>
+    <a href="https://github.com/Chavanmanoj" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  </div>
+
+  <!-- Back to Top -->
+  <a id="back-to-top" href="#welcome">⬆ Back to Top</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Manoj Chavan |
+      <a href="mailto:123manoj2129@sjcem.edu.in">Email</a> |
+      <a href="https://github.com/Chavanmanoj" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </p>
+  </footer>
+
+  <!-- JavaScript for Fade-in and Back-to-Top -->
+  <script>
+    // Page load transition
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    // Show "Back to Top" button
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 400 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
